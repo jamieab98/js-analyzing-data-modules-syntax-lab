@@ -1,12 +1,11 @@
+require('datejs');
 function combineUsers(...args) {
-  console.log(args);
   let combineObject = {users: []};
   let a = 0;
   
   while (a < args.length) {
     let tempUser = args[a];
     combineObject.users = [...combineObject.users, ...tempUser];
-    console.log(combineObject.users);
     a++
   }
 
@@ -20,7 +19,7 @@ function combineUsers(...args) {
   return combineObject;
 }
 
-combineUsers(["Jim3","Pam5","Dwight77"],["Michael6","Eleanor22","Chidi202"],["Jack_jack","Julia_Oreo", "Bill_bore"])
+combineUsers()
 
 module.exports = {
   ...(typeof combineUsers !== 'undefined' && { combineUsers })
