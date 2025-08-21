@@ -1,14 +1,12 @@
 function combineUsers(args) {
   let combineObject = {users: []};
   let a = 0;
-  while (a < args.length) {
-    console.log(a);
-    a++;
+  for (let arg of args) {
+    console.log(arg);
   }
-  console.log('apple');
   return args;
 }
-let input = [1, 2, 3];
+let input = ['Jamie', 'Bobby'];
 
 combineUsers(input)
 
