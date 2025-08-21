@@ -10,17 +10,11 @@ function combineUsers(...args) {
   }
 
   const currentDate = Date.today().toString('M/d/yyyy');
-  /*const year = currentDate.getFullYear();
-  const month = currentDate.getMonth();
-  const day = currentDate.getDay();*/
   const merge_date = currentDate;
-
-  console.log(currentDate);
 
   combineObject.merge_date = merge_date;
   return combineObject;
 }
-console.log(Date.today().toString('MM/dd/yyyy'));
 
 combineUsers()
 
