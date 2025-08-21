@@ -1,10 +1,16 @@
-function combineUsers(...args) {
-  args = [];
-  console.log(typeof args);
+function combineUsers(args) {
+  let combineObject = {users: []};
+  let a = 0;
+  while (a < args.length) {
+    console.log(a);
+    a++;
+  }
+  console.log('apple');
   return args;
 }
+let input = [1, 2, 3];
 
-combineUsers()
+combineUsers(input)
 
 
 module.exports = {
