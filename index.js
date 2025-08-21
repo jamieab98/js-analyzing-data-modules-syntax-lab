@@ -17,7 +17,6 @@ function combineUsers(...args) {
   const merge_date = `${month}/${day}/${year}`;
 
   combineObject.merge_date = merge_date;
-  //console.log(combineObject);
   return combineObject;
 }
 
